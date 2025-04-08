@@ -1,7 +1,7 @@
 import React from 'react'
-import Program1 from "../assets/program1.png"
-import Program2 from "../assets/program2.png"
-import Program3 from "../assets/program3.png"
+import Program1 from "../../assets/program1.png"
+import Program2 from "../../assets/program2.png"
+import Program3 from "../../assets/program3.png"
 const OurProgram = () => {
   return (
     <>

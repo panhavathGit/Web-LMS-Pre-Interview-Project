@@ -1,21 +1,27 @@
 import React from "react";
-import FounderMessage from "../components/FounderMessage.jsx";
-import { ContactUs } from "../components/ContactUs.jsx";
-import OurMission from "../components/OurMission.jsx";
-import Program from "../components/Program.jsx";
-import OurProgram from "../components/OurProgram.jsx";
-import Intro from "../components/Intro.jsx";
+import FounderMessage from "../components/Home/FounderMessage.jsx";
+import { ContactUs } from "../components/Home/ContactUs.jsx";
+import OurMission from "../components/Home/OurMission.jsx";
+import Program from "../components/Home/Program.jsx";
+import OurProgram from "../components/Home/OurProgram.jsx";
+import Intro from "../components/Home/Intro.jsx";
+import Navbar from "../layout/TopBar.jsx";
+import Footer from "../layout/footer.jsx";
 
 const Homepage = () => {
     return (
-      <div className="w-full">
-        <Intro />
-        <div id="mission"><OurMission /></div>
-        <div id="programs"><OurProgram /></div>
-        <div><Program/></div>
-        <div id="founder"><FounderMessage /></div>
-        <div id="contact"><ContactUs /></div>
-      </div>
+        <>
+        <Navbar />
+            <div className="w-full">
+                <Intro />
+                <div id="mission"><OurMission /></div>
+                <div id="programs"><OurProgram /></div>
+                <div><Program/></div>
+                <div id="founder"><FounderMessage /></div>
+                <div id="contact"><ContactUs /></div>
+            </div>
+        <Footer/>
+        </>
     );
   };
   

@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner1 from '../assets/Banner-1.jpg';
+import Banner1 from '../../assets/Banner-1.jpg';
 const Intro = () => {
   return (
     <div className='grid grid-cols-2 items-center p-15'>

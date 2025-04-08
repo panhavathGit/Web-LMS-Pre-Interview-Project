@@ -1,7 +1,7 @@
 import React from 'react'
-import SchoolTransformation from "../assets/schooltransformation.png"
-import Makerspace from "../assets/Makerspace.png"
-import Competencies from "../assets/competencies.png"
+import SchoolTransformation from "../../assets/schooltransformation.png"
+import Makerspace from "../../assets/Makerspace.png"
+import Competencies from "../../assets/competencies.png"
 
 const Program = () => {
   return (
@@ -32,7 +32,7 @@ const Program = () => {
 
             <div className="grid grid-cols-1 p-20 border-r border-r-gray-200">
                 <div className="flex flex-row gap-5 items-center ">
-                    <img src={Makerspace} alt="" className='w-10 h-10'/>
+                    <img src={SchoolTransformation} alt="" className='w-10 h-10'/>
                     <h1 className='text-2xl font-semibold'>School Digital Transformation</h1>
                 </div>
                 <p className='mb-10 mt-8'>Building capacity for educators and school leadership to lead sustainable digital transformation initiative in school with focus on community building and building environment for future leanring.</p>

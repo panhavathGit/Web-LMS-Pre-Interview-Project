@@ -1,7 +1,7 @@
 import React from 'react'
-import Instagram from '../assets/instagram.svg';
-import Linkedin from '../assets/linkedin.svg';
-import Facebook from '../assets/facebook.svg';
+import Instagram from '../../assets/instagram.svg';
+import Linkedin from '../../assets/linkedin.svg';
+import Facebook from '../../assets/facebook.svg';
 export const ContactUs = () => {
   return (
     <>
