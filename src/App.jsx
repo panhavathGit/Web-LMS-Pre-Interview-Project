@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepage from "./pages/HomePage";
 import Navbar from "./layout/TopBar";
 import Footer from "./layout/footer.jsx";
+import { LoginPage } from "./pages/LoginPage.jsx";
 
 const Dashboard = () => (
   <div className="p-8 grid gap-4 grid-cols-1 md:grid-cols-3">
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/login" element={<LoginPage />} />
           </Routes>
         </main>
       <Footer/>
