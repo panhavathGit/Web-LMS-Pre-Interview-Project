@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepage from "./pages/HomePage";
 import Navbar from "./layout/TopBar";
 import Footer from "./layout/footer.jsx";
+
 const Dashboard = () => (
   <div className="p-8 grid gap-4 grid-cols-1 md:grid-cols-3">
     <div className="bg-white shadow rounded p-4">Profile Overview</div>

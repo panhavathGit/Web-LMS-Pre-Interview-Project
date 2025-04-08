@@ -7,19 +7,17 @@ import OurProgram from "../components/OurProgram.jsx";
 import Intro from "../components/Intro.jsx";
 
 const Homepage = () => {
-    return(
-        <>
-        <div className="w-full">
-            <Intro/>
-            <OurMission/>
-            <OurProgram/>
-            <Program/>
-            <FounderMessage />
-            <ContactUs/>
-        </div>
-        </>
-    )
-
-}
+    return (
+      <div className="w-full">
+        <Intro />
+        <div id="mission"><OurMission /></div>
+        <div id="programs"><OurProgram /></div>
+        <div><Program/></div>
+        <div id="founder"><FounderMessage /></div>
+        <div id="contact"><ContactUs /></div>
+      </div>
+    );
+  };
+  
 
 export default Homepage;
