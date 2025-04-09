@@ -1,21 +1,19 @@
 import { useState } from "react";
-import { FaBox,  FaBookOpen,FaClipboardList } from "react-icons/fa";
-import Logo from '../assets/logo.svg'
 
-const Sidebar = ({ onSelect }) => {
+export const AssignmentNav = ({ onSelect }) => {
     const menuItems = [
-        { id: "overview", name: "Overview", icon: <FaBox /> },
-        { id: "courses", name: "Courses", icon: <FaBookOpen /> },
-        { id: "assignments", name: "Assignments", icon: <FaClipboardList /> },
+        { id: "upcomming", name: "Upcomming"},
+        { id: "pastdue", name: "Pastdue"},
+        { id: "assignmentcompleted", name: "Completed"},
     ];
-    const [active, setActive] = useState("overview");
+    const [active, setActive] = useState("upcomming");
 
     return (
         <div className="w-64 h-screen md:block hidden shadow-sm">
             <div className="flex justify-center items-center mt-5 mb-5">
-                <a href="/">
+                {/* <a href="/">
                     <img className="h-20" src={Logo} alt="" />
-                </a>
+                </a> */}
             </div>
             <ul className="space-y-1">
                 {menuItems.map((item) => (
@@ -41,5 +39,3 @@ const Sidebar = ({ onSelect }) => {
         </div>
     );
 };
-
-export default Sidebar;

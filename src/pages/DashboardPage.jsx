@@ -3,7 +3,7 @@ import AdminLayout from "../layout/AdminLayout.jsx";
 import Assignments from "./Assignments.jsx";
 import Courses from "./Courses.jsx";
 import Overview from "./Overview.jsx";
-
+import { AssignmentPageStorage } from "../layout/AssignmentPageStorage.jsx";
 const Dashboard = () => {
     const [selectedPage, setSelectedPage] = useState("overview");
     const renderPage = () => {
@@ -13,7 +13,7 @@ const Dashboard = () => {
             case "courses":
                 return <Courses />;
             case "assignments":
-                return <Assignments />;
+                return <AssignmentPageStorage/>;
         }
     };
 

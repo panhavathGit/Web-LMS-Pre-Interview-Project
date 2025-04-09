@@ -5,7 +5,7 @@ const TopBar = () => {
   return (
     <div className="w-full dark:bg-white light:bg-gray-900 dark:text-white flex justify-between items-center p-2.5 shadow-sm px-6 relative">
       <h1 className="text-xl italic font-semibold flex dark:text-white">
-        {/* <User className="m-0.5 mr-1" /> Hello, */}
+        Welcome, Panhavath
       </h1>
       <div className="flex items-center gap-6">
         {/* Mode Switch */}

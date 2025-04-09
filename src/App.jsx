@@ -44,6 +44,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepage from "./pages/HomePage";
 import { LoginPage } from "./pages/LoginPage.jsx";
 import Dashboard from "./pages/DashboardPage.jsx";
+// import { AssignmentCompleted } from "./pages/AssignmentPage/AssignmentCompleted.jsx";
+// import PastDue from "./pages/AssignmentPage/PastDue.jsx";
+// import Upcoming from "./pages/AssignmentPage/Upcomming.jsx";
+// import { AssignmentPageStorage } from "./layout/AssignmentLayout.jsx";
 
 export default function App() {
   return (
@@ -52,6 +56,9 @@ export default function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/dashboard" element={ <Dashboard /> } />
+            {/* <Route path="/assignments" element={<AssignmentPageStorage /> }/> */}
+        
+         
           </Routes>
     </Router>
   );
