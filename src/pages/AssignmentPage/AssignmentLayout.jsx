@@ -5,12 +5,12 @@ import { AssignmentNav } from './AssignmentNav';
 export const AssignmentLayout = ({children, onSelectAssignment}) => {
     return(
         <>
-         <div className="flex flex-col">
-            <div className="flex flex-row gap-8 ">
+            <div className="ml-3">
                 <AssignmentNav onSelect = {onSelectAssignment}/>
-                {children}
+                <div className='mt-5'>
+                    {children}
+                </div>
             </div>
-        </div>
         </>
     );
 }
