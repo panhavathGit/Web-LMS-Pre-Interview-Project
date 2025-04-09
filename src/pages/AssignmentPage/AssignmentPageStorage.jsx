@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { AssignmentLayout } from "./AssignmentLayout";
-import Upcoming from "../pages/AssignmentPage/Upcomming.jsx";
-import PastDue from "../pages/AssignmentPage/PastDue.jsx";
-import { AssignmentCompleted } from "../pages/AssignmentPage/AssignmentCompleted.jsx";
+import { AssignmentLayout } from "./AssignmentLayout.jsx";
+import Upcoming from "./Upcomming.jsx";
+import PastDue from "./PastDue.jsx";
+import { AssignmentCompleted } from "./AssignmentCompleted.jsx";
 
 export const AssignmentPageStorage = () => {
     const [selectedAssignment, setSelectedAssignment] = useState("upcomming");
