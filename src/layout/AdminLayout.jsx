@@ -11,7 +11,7 @@ const AdminLayout = ({ children, onSelectPage }) => {
             {/* we use col because the second side have two elment stack on each other  */}
             <div className="flex-1 flex flex-col overflow-auto dark:text-white dark:bg-slate-700">
                 <TopBar />
-                <div className="p-3 dark:bg-gray-700 min-h-screen dark:text-white">
+                <div className="p-3 dark:bg-gray-700 dark:text-white">
                     {children}
                 </div>
             </div>

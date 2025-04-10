@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaBox,  FaBookOpen,FaClipboardList } from "react-icons/fa";
 import Logo from '../assets/logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = ({ onSelect }) => {
     const menuItems = [
@@ -37,7 +39,12 @@ const Sidebar = ({ onSelect }) => {
                         {active === item.id && <div className="bg-teal-300 w-1 rounded-md h-14"></div>}
                     </li>
                 ))}
+                <p className="pl-6 flex items-center gap-3 mt-10">
+                    <FontAwesomeIcon icon={faSignOutAlt} className="text-teal-600 text-xl" />
+                    <a href="/">Logout</a>
+                </p>
             </ul>
+        
         </div>
     );
 };
