@@ -1,11 +1,41 @@
 import { FaBell } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const TopBar = () => {
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        const userId = localStorage.getItem("user_id");
+
+        if (!userId) {
+          console.error("User ID not found");
+          return;
+        }
+
+        const response = await axios.get(
+          `http://127.0.0.1:8000/api/users/${userId}`,
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
+        console.log(response.data);
+        setUserName(response.data.user.name);
+      } catch (error) {
+        console.error("Error fetching profile:", error);
+      }
+    };
+
+    fetchProfile();
+  }, []);
 
   return (
     <div className="w-full dark:bg-white light:bg-gray-900 dark:text-white flex justify-between items-center p-2.5 shadow-sm px-6 relative">
       <h1 className="text-xl italic font-semibold flex dark:text-white">
-        Welcome, Panhavath
+        Welcome, {userName}
       </h1>
       <div className="flex items-center gap-6">
         {/* Mode Switch */}

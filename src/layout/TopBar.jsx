@@ -11,7 +11,7 @@ const Navbar = () => (
         <Link smooth to="/#mission" className="hover:underline font-bold">About us</Link>
         <Link smooth to="/#programs" className="hover:underline font-bold">Programs</Link>
         <Link smooth to="/#contact" className="hover:underline font-bold">Contact</Link>
-        <Link smooth to="/dashboard" className="hover:underline font-bold">Dashboard</Link>
+        {/* <Link smooth to="/dashboard" className="hover:underline font-bold">Dashboard</Link> */}
     </div>
     <Link to = "/login">
       <div className="bg-teal-500 p-2 rounded-lg">
